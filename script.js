@@ -49,7 +49,12 @@ startbtn.addEventListener("click", () => {
         } else {
             timeoutId = setTimeout(updateCountdown, 1000);
 
-            document.getElementById('countdown').innerHTML = `${days} D ${hours} H ${min} M ${sec} S `;
+            // document.getElementById('countdown').innerHTML = `${days} D ${hours} H ${min} M ${sec} S `;
+            document.getElementById('days').innerHTML = `${days}`;
+            document.getElementById('hrs').innerHTML = `${hours}`;
+            document.getElementById('min').innerHTML = `${min}`;
+            document.getElementById('sec').innerHTML = `${sec}`;
+
 
         }
     }
